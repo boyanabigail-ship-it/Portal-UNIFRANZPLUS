@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  style="background-color: #050505; color: #ffffff; margin: 0; padding: 0; font-family: Arial, sans-serif; min-height: 100vh; position: relative; overflow-x: hidden;">
+     <div style="position: absolute; width: 300px; height: 300px; background: #ff9f22; border-radius: 50%; bottom: -100px; right: 50px; opacity: 0.4; z-index: 1; filter: blur(40px);"></div>
+
+    <div style="background-color: #000000; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 10; border-bottom: 1px solid #1a1a1a;">
+        <span style="font-weight: bold; font-size: 20px; letter-spacing: 1px;">UNIFRANZ+</span>
+        <div>
+            <a href="../../Inicio.html" style="color: #aaaaaa; text-decoration: none; margin-left: 20px; font-size: 15px;">Inicio</a>
+            <a href="../../horarios.html" style="color: #aaaaaa; text-decoration: none; margin-left: 20px; font-size: 15px;">Calendario Academico</a>
+            <a href="../../Contacto.html" style="color: #aaaaaa; text-decoration: none; margin-left: 20px; font-size: 15px;">Contactanos</a>
+            <a href="../materias.html" style="color: #ff8c00; text-decoration: none; margin-left: 20px; font-size: 15px; font-weight: bold;">Perfil</a>
+        </div>
+    </div>
+
+    <div style="position: relative; z-index: 5; max-width: 1200px; margin: 0 auto; padding: 30px 20px;">
+        
+        <div style="background: linear-gradient(90deg, #b86b32, #dfa375); padding: 25px 40px; border-radius: 40px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <h1 style="margin: 0; font-size: 34px; font-weight: bold; color: #ffffff;">Taller de Fotografia</h1>
+        </div>
+
+        <div style="position: relative; display: flex; justify-content: space-between; align-items: center; max-width: 750px; margin: 0 auto 50px auto; padding: 0 10px;">
+            <div style="position: absolute; top: 50%; left: 0; right: 0; height: 3px; background-color: #ffffff; z-index: 1; transform: translateY(-50%);"></div>
+            <div style="width: 14px; height: 14px; background-color: #ffffff; border-radius: 50%; z-index: 2;"></div>
+            
+            <button onclick="mostrarTareas(1)" id="btn-hito-1" style="width: 42px; height: 42px; background-color: #ff8c00; border-radius: 50%; z-index: 3; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 16px; color: #ffffff; border: 3px solid #ffffff; cursor: pointer; box-shadow: 0 0 10px #ff8c00;">1</button>
+            <button onclick="mostrarTareas(2)" id="btn-hito-2" style="width: 38px; height: 38px; background-color: #ffffff; border-radius: 50%; z-index: 3; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 15px; color: #000000; border: none; cursor: pointer;">2</button>
+            <button onclick="mostrarTareas(3)" id="btn-hito-3" style="width: 38px; height: 38px; background-color: #ffffff; border-radius: 50%; z-index: 3; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 15px; color: #000000; border: none; cursor: pointer;">3</button>
+            <button onclick="mostrarTareas(4)" id="btn-hito-4" style="width: 38px; height: 38px; background-color: #ffffff; border-radius: 50%; z-index: 3; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 15px; color: #000000; border: none; cursor: pointer;">4</button>
+            <button onclick="mostrarTareas(5)" id="btn-hito-5" style="width: 38px; height: 38px; background-color: #ffffff; border-radius: 50%; z-index: 3; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 15px; color: #000000; border: none; cursor: pointer;">5</button>
+            
+            <div style="width: 14px; height: 14px; background-color: #ffffff; border-radius: 50%; z-index: 2;"></div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; width: 100%;">
+            
+            <div style="flex: 0 0 22%;">
+                <a href="https://meet.google.com/landing" target="_blank" style="text-decoration: none; display: block;">
+                    <div style="background-color: #b86b32; height: 180px; border-radius: 30px; display: flex; justify-content: center; align-items: center; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); text-align: center; cursor: pointer; transition: 0.2s;">
+                        <h3 style="font-size: 22px; font-weight: bold; margin: 0; color: #ffffff;">Clase MEET</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div style="flex: 0 0 53%;">
+                <div id="panel-central" style="background-color: #ffffff; color: #000000; border-radius: 30px; padding: 30px; min-height: 280px; position: relative; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+                    
+                    <div style="position: absolute; right: 25px; top: 30px; bottom: 30px; width: 4px; background: linear-gradient(#ffffff, #ff8c00, #ffffff); border-radius: 2px;"></div>
+
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+                        <div style="width: 45px; height: 45px; background-color: #222222; border-radius: 50%; margin-right: 15px; flex-shrink: 0; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 10px; font-weight: bold;">Docente</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 15px; font-weight: bold; color: #000000;">H1. Edicion Photoshop</h4>
+                            <p style="margin: 3px 0 8px 0; font-size: 11px; color: #666666;">Abierto: 11:33 am &nbsp;&nbsp; Cierre: 18:00 pm</p>
+                            <button style="background-color: transparent; border: 1px solid #000000; color: #000000; padding: 5px 18px; border-radius: 20px; font-size: 11px; font-weight: bold; cursor: pointer;">Abrir tarea</button>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: flex-start;">
+                        <div style="width: 45px; height: 45px; background-color: #222222; border-radius: 50%; margin-right: 15px; flex-shrink: 0; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 10px; font-weight: bold;">Docente</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 15px; font-weight: bold; color: #000000;">H1. Fotografias callejeras</h4>
+                            <p style="margin: 3px 0 5px 0; font-size: 11px; color: #666666;">Abierto: 15:03 am &nbsp;&nbsp; Cierre: 22:19 pm</p>
+                            <p style="margin: 0 0 10px 0; font-size: 12px; color: #444444; line-height: 1.4; max-width: 380px;">Sube todas las practicas que realizamos en clase y no olvides la evidencia del procedimiento.</p>
+                            <button style="background-color: transparent; border: 1px solid #000000; color: #000000; padding: 5px 18px; border-radius: 20px; font-size: 11px; font-weight: bold; cursor: pointer;">Abrir tarea</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="flex: 0 0 21%;">
+                <div onclick="mostrarAsistencia()" style="background: linear-gradient(135deg, #cc5500, #ff8c00); padding: 18px; border-radius: 25px; text-align: center; font-weight: bold; font-size: 16px; box-shadow: 0 4px 15px rgba(204,85,0,0.3); cursor: pointer; margin-bottom: 20px; color: #ffffff;">
+                    Asistencia
+                </div>
+                
+                <div style="height: 1px; background-color: #333333; margin: 0 auto 20px auto; width: 90%;"></div>
+
+                <div onclick="mostrarMaterial()" style="background: linear-gradient(135deg, #cc5500, #ff8c00); padding: 18px; border-radius: 25px; text-align: center; font-weight: bold; font-size: 16px; box-shadow: 0 4px 15px rgba(204,85,0,0.3); cursor: pointer; color: #ffffff;">
+                    Material de Avance
+                </div>
+            </div>
+
+        </div>
+
+        <div style="border-top: 2px solid #ff8c00; margin-top: 60px; padding-top: 20px; font-size: 12px; color: #aaaaaa; text-align: left; line-height: 1.8;">
+            <div>Soporte Técnico: soporte.portal@unifranz.edu.bo</div>
+            <div>Servicios Estudiantiles Nacionales: info@unifranz.edu.bo</div>
+            <div>Atención por WhatsApp: +591 71502211</div>
+        </div>
+
+    </div>
+
+    <script>
+        const panel = document.getElementById('panel-central');
+
+        function mostrarAsistencia() {
+            panel.innerHTML = `
+                <div style="position: absolute; right: 25px; top: 30px; bottom: 30px; width: 4px; background: linear-gradient(#ffffff, #ff8c00, #ffffff); border-radius: 2px;"></div>
+                <h3 style="margin: 0 0 20px 0; font-size: 20px; font-weight: bold; color: #ff8c00;">Asistencia del Día de Hoy</h3>
+                <div style="border-left: 3px solid #ff8c00; padding-left: 15px; margin-bottom: 15px;">
+                    <p style="margin: 0; font-weight: bold; font-size: 15px;">Registro de Ingreso:</p>
+                    <p style="margin: 3px 0 0 0; font-size: 13px; color: #28a745;">✔️ PRESENTE - Registrado a las 07:28 AM</p>
+                </div>
+                <p style="font-size: 13px; color: #555555; line-height: 1.5;">Tu asistencia ha sido validada mediante el sistema de aula virtual de la universidad. No requieres acciones adicionales para esta fecha.</p>
+            `;
+            resetearEstiloHitos();
+        }
+
+        function mostrarMaterial() {
+            panel.innerHTML = `
+                <div style="position: absolute; right: 25px; top: 30px; bottom: 30px; width: 4px; background: linear-gradient(#ffffff, #ff8c00, #ffffff); border-radius: 2px;"></div>
+                <h3 style="margin: 0 0 20px 0; font-size: 20px; font-weight: bold; color: #ff8c00;">Material de Avance y Apoyo</h3>
+                
+                <div style="margin-bottom: 15px;">
+                    <h4 style="margin: 0; font-size: 15px; font-weight: bold;"> Documentos Básicos</h4>
+                    <p style="margin: 2px 0 0 15px; font-size: 13px; color: #333;">• Silabo Completo de Identidad Visual.pdf</p>
+                    <p style="margin: 2px 0 0 15px; font-size: 13px; color: #333;">• Guía de Manuales de Marca Corporativos.pdf</p>
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <h4 style="margin: 0; font-size: 15px; font-weight: bold;"> Diapositivas de Clases</h4>
+                    <p style="margin: 2px 0 0 15px; font-size: 13px; color: #333;">• Presentacion Tema 1: Introduccion a la Semiotica.pptx</p>
+                    <p style="margin: 2px 0 0 15px; font-size: 13px; color: #333;">• Presentacion Tema 2: Construccion de Logotipos Geométricos.pptx</p>
+                </div>
+            `;
+            resetearEstiloHitos();
+        }
+
+        function mostrarTareas(numeroHito) {
+            panel.innerHTML = `
+                <div style="position: absolute; right: 25px; top: 30px; bottom: 30px; width: 4px; background: linear-gradient(#ffffff, #ff8c00, #ffffff); border-radius: 2px;"></div>
+                
+                <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+                    <div style="width: 45px; height: 45px; background-color: #222222; border-radius: 50%; margin-right: 15px; flex-shrink: 0; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 10px; font-weight: bold;">Docente</div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 15px; font-weight: bold; color: #000000;">H${numeroHito}. Proyecto de Investigacion de Campo</h4>
+                        <p style="margin: 3px 0 8px 0; font-size: 11px; color: #666666;">Estado: Pendiente de revision</p>
+                        <button style="background-color: transparent; border: 1px solid #000000; color: #000000; padding: 5px 18px; border-radius: 20px; font-size: 11px; font-weight: bold; cursor: pointer;">Abrir tarea</button>
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start;">
+                    <div style="width: 45px; height: 45px; background-color: #222222; border-radius: 50%; margin-right: 15px; flex-shrink: 0; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 10px; font-weight: bold;">Docente</div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 15px; font-weight: bold; color: #000000;">H${numeroHito}. Evaluacion Practica de Contenido</h4>
+                        <p style="margin: 3px 0 5px 0; font-size: 11px; color: #666666;">Cierre de Hito Próximo</p>
+                        <button style="background-color: transparent; border: 1px solid #000000; color: #000000; padding: 5px 18px; border-radius: 20px; font-size: 11px; font-weight: bold; cursor: pointer;">Abrir tarea</button>
+                    </div>
+                </div>
+            `;
+
+            for (let i = 1; i <= 5; i++) {
+                const btn = document.getElementById('btn-hito-' + i);
+                if (i === numeroHito) {
+                    btn.style.backgroundColor = '#ff8c00';
+                    btn.style.color = '#ffffff';
+                    btn.style.border = '3px solid #ffffff';
+                    btn.style.boxShadow = '0 0 10px #ff8c00';
+                } else {
+                    btn.style.backgroundColor = '#ffffff';
+                    btn.style.color = '#000000';
+                    btn.style.border = 'none';
+                    btn.style.boxShadow = 'none';
+                }
+            }
+        }
+
+        function resetearEstiloHitos() {
+            for (let i = 1; i <= 5; i++) {
+                const btn = document.getElementById('btn-hito-' + i);
+                btn.style.backgroundColor = '#ffffff';
+                btn.style.color = '#000000';
+                btn.style.border = 'none';
+                btn.style.boxShadow = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

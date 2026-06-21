@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos unifranz</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+    
+</head>
+<body style="background-color: #050505; color: #ffffff; margin: 0; padding: 0; font-family: Arial, sans-serif; min-height: 100vh;">
+     
+     <div style="background-color: #000000; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 10; border-bottom: 1px solid #1a1a1a;">
+        <span style="font-weight: bold; font-size: 20px; letter-spacing: 1px;">UNIFRANZ+</span>
+        <div>
+            <a href="Inicio.html" style="color: #aaaaaa; text-decoration: none; margin-left: 20px; font-size: 15px;">Inicio</a>
+            <a href="horarios.html" style="color: #aaaaaa; text-decoration: none; margin-left: 20px; font-size: 15px;">Calendario Academico</a>
+            <a href="Contacto.html" style="color: #ff6200; text-decoration: none; margin-left: 20px; font-size: 15px; font-weight: bold;">Contactanos</a>
+            <a href="materias.html" style="color: #aaaaaa; text-decoration: none; margin-left: 20px; font-size: 15px;">Perfil</a>
+        </div>
+    </div>
+
+    <div style="position: relative; height: 450px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('imageness/contactanos.jpeg') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px;">
+        
+        <h1 style="font-size: 50px; font-weight: 900; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase;">
+            CONTACTATE CON <span style="color: #ff6200;">NOSOTROS</span>
+        </h1>
+        
+        <p style="font-size: 18px; max-width: 750px; color: #e0e0e0; font-weight: 300; line-height: 1.6;">
+            ¿Necesitas ayuda? Puedes dejarnos tu informacion de contacto y nos comunicaremos con usted lo mas antes posible.
+        </p>
+
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; line-height: 0;">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="position: relative; display: block; width: 100%; height: 60px;">
+                <path d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,120L1320,120C1200,120,960,120,720,120C480,120,240,120,120,120L0,120Z" fill="#050505"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div style="max-width: 1100px; margin: 0 auto; padding: 50px 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 50px; flex-wrap: wrap;">
+            
+            <div style="flex: 1; min-width: 300px;">
+                <form action="#" method="POST">
+                    
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: block; font-size: 14px; color: #aaaaaa; margin-bottom: 8px;">E-mail o numero de telefono:</label>
+                        <input type="text" required 
+                               style="width: 100%; background-color: #1a1a1a; border: 1px solid #333333; border-radius: 30px; padding: 15px 20px; color: #ffffff; font-size: 15px; outline: none; box-sizing: border-box;">
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <label style="display: block; font-size: 14px; color: #aaaaaa; margin-bottom: 8px;">¿Qué tipo de apoyo necesitas?</label>
+                        <select style="width: 100%; background-color: #1a1a1a; border: 1px solid #333333; border-radius: 30px; padding: 15px 20px; color: #ffffff; font-size: 15px; outline: none; appearance: none; box-sizing: border-box; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23aaaaaa%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 20px top 50%; background-size: 12px auto;">
+                            <option value="" disabled selected hidden>Selecciona una opción</option>
+                            <option value="academico">Apoyo Académico</option>
+                            <option value="plataforma">Problemas con el Portal</option>
+                            <option value="tramites">Trámites y Pagos</option>
+                            <option value="otros">Otros asuntos</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" 
+                            style="background-color: transparent; border: 2px solid #ffffff; color: #ffffff; border-radius: 30px; padding: 10px 40px; font-weight: bold; font-size: 15px; cursor: pointer; transition: 0.3s; width: auto;">
+                        Enviar
+                    </button>
+
+                </form>
+            </div>
+
+            <div style="flex: 1; min-width: 300px; text-align: right; display: flex; flex-direction: column; justify-content: center; font-size: 14px; line-height: 1.8; color: #ffffff;">
+                <div style="font-weight: bold; margin-bottom: 12px; font-size: 15px;">
+                    Escríbenos al WhatsApp: <span style="color: #ff6200;">71502211</span>
+                </div>
+                <div style="color: #aaaaaa; margin-bottom: 4px;">cae_ea@unifranz.edu.bo</div>
+                <div style="color: #aaaaaa; margin-bottom: 4px;">cae.lpz@unifranz.edu.bo</div>
+                <div style="color: #aaaaaa; margin-bottom: 4px;">caecbba@unifranz.edu.bo</div>
+                <div style="color: #aaaaaa; margin-bottom: 30px;">cae.scz@unifranz.edu.bo</div>
+                
+                <div style="font-weight: bold; font-size: 15px; letter-spacing: 0.5px; text-transform: uppercase;">
+                    Universidad Privada Franz Tamayo
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
